@@ -11,7 +11,7 @@ class CzechName
      * @param boolean|null $isLastName
      * @return string Jméno v 5. pádu
      */
-    public function vocative(string $name, bool $isWoman = null, bool $isLastName = null): string
+    public function vocative(string $name, ?bool $isWoman = null, ?bool $isLastName = null): string
     {
         $name = trim($name);
         if (preg_match('~[^[:alpha:]]$~u', $name)) {
